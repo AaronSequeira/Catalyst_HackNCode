@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Sidebar, Navbar } from './components';
-import { Home, Profile, CreateCampaign, CampaignDetails, UserDonation, Search, Update } from './pages'
+import { Home } from './pages'
 import { initialState , reducer } from './UseReducer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
