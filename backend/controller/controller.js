@@ -1,3 +1,13 @@
+const express = require('express')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const mongoose = require('mongoose')
+const router = express.Router()
+
+
+require("../db/connnection");
+const User = require('../model/userSchema');
+
 const viewAllUsers = (req,res) => {
     User.find()
         .then((users) =>{
